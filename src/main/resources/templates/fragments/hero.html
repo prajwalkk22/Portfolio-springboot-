@@ -1,0 +1,71 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org">
+<th:block th:fragment="hero-section">
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    Hi there, I'm
+                </div>
+                <h1 class="hero-title"><span class="gradient-text">Prajwal K K</span> </h1>
+                <h2 class="hero-subtitle">Student,Developer</h2>
+                <p class="hero-description">
+                    I am a Computer Science Engineering student and a beginner backend developer.
+                    I am currently learning Java and Spring Boot, and I'm passionate about building applications using microservices architecture.
+                    I'm focused on improving my skills by working on real-world projects.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Works <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get In Touch <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="tel:+917019338933" class="social-link">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="mailto:prajwalkk513@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/prajwal-k-k-080aaa283/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/prajwalkk22" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-visual-inner">
+                    <div class="hero-visual-frame">
+                        <img src="/images/profile.png" alt="profile" style="width:90%;height:90%;object-fir:cover;border-radius:15px;">
+                    </div>
+                    <div class="hero-visual-frame"></div>
+                    <div class="hero-visual-frame"></div>
+                </div>
+                <div class="hero-stats stats-1">
+                    <div class="hero-stats-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="hero-stats-text">
+                        <div class="hero-stats-label">Student</div>
+                        <div class="hero-stats-value">Sahyadri</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator-line">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
