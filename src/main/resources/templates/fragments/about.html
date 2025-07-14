@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<th:block th:fragment="about-section">
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Get to know more about my background, skills, and what drives me.
+                </p>
+            </div>
+            <div class="about-container">
+                <!-- Content Column -->
+                <div class="about-content">
+                    <div class="about-tagline">My Background</div>
+                    <h3 class="about-heading">A Student with a Passion for Building Backends</h3>
+                    <p class="about-text">
+                        Hi, I’m Prajwal K K, currently pursuing my Bachelor’s degree in Computer Science and Engineering at Sahyadri College of Engineering and Management, Mangalore. I’m passionate about learning new technologies and enjoy building things that live on the internet. As a student, I’m always eager to explore how software can solve real-world problems.
+                    </p>
+                    <p class="about-text">
+                        I’ve been learning and working with HTML, CSS, and JavaScript to build static and interactive websites. I also have beginner-level experience with Node.js, MongoDB, and basic backend development. My current focus is on improving my skills in Java and exploring Spring Boot and microservices architecture for scalable application development.
+                    </p>
+                    <p class="about-text">
+                        Besides coding, I enjoy debugging, experimenting with UI designs, and understanding how systems work end-to-end. I believe in learning by doing, which is why I'm currently building this personal portfolio as part of my journey. I'm excited to continue growing as a developer and contribute to real-world projects in the near future.
+                    </p>
+
+                    <!-- Skills -->
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <div class="skill-name">Java</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-php"></i></div>
+                            <div class="skill-name">PHP</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git"></i></div>
+                            <div class="skill-name">Git</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Column -->
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <div class="about-image-bg"></div>
+                        <img src="/images/aboutimage.jpg" alt="About Visual" class="about-image" />
+                        <div class="about-decorations">
+                            <div class="about-decoration"></div>
+                            <div class="about-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
