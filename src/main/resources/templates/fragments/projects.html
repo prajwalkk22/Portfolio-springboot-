@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects-section">
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">
+                    Explore some of my recent projects
+                </p>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/thumbnail6.jpg" alt="udemy">
+                        <div class="project-overlay"></div>
+                        <div class="project-tags">
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">Spring Security</span>
+                            <span class="project-tag">Data JPA</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">Mongodb</span>
+                            <span class="project-tag">Postman</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Build REST APIs with Spring and Spring Boot</h3>
+                        <p class="project-description">
+                            In this project, I have created a production-grade REST API that connects to a MySQL database using JPA/Hibernate
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/scbushan05/expense-manager-api" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://www.udemy.com/course/build-production-ready-rest-api-with-spring-boot-expense-manager-api/" class="project-link">
+                                view <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
