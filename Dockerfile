@@ -1,24 +1,17 @@
-# Use a Java 17 base image
-FROM eclipse-temurin:17-jdk
-
-# Set the working directory inside the container
+# ---------- BUILD STAGE ----------
+FROM eclipse-temurin:21-jdk AS build
 WORKDIR /app
 
-# Copy Maven wrapper files and pom.xml
-COPY .mvn .mvn
-COPY mvnw pom.xml ./
-
-# Download dependencies first (for better Docker caching)
-RUN ./mvnw dependency:go-offline
-
-# Copy all project files
 COPY . .
 
-# Build the Spring Boot JAR
+RUN chmod +x ./mvnw
 RUN ./mvnw clean package -DskipTests
 
-# Expose the default Spring Boot port
-EXPOSE 8080
+# ---------- RUNTIME STAGE ----------
+FROM eclipse-temurin:21-jdk
+WORKDIR /app
 
-# Run the JAR file
-CMD ["java", "-jar", "target/your-project-name-0.0.1-SNAPSHOT.jar"]
+COPY --from=build /app/target/*.jar app.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
